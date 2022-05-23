@@ -9,7 +9,12 @@ def print_choices():
     print("| 4. Print Done list      |")
     print("| 5. Print ALL lists      |")
     print("| q: quit application     |")
-    print("|"+"*"*25+"|")
+
+def add_item(todo_list, done_list):
+    item = input("Add new item: ")
+    todo_list.append(item)
+
+
 
 while(True):    
     print_choices()
